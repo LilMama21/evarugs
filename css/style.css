@@ -5,6 +5,10 @@ body {
   font-weight: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   width: 100%;
   height: 100%;
@@ -117,11 +121,12 @@ h6 {
   display: flex;
 }
 
-.main__display-menu li {
+.main__display-menu a {
   font-style: normal;
   font-weight: 300;
   font-size: 1.8rem;
   line-height: 117%;
+  text-decoration: none;
   color: #737373;
 }
 
