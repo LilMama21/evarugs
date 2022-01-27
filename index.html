@@ -1,143 +1,268 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evarugs в твоем городе</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header class="header">
-        <div class="wrapper">
-            <div class="header__wrap">
-                <div class="header__telephone">
-                    <div class="header__telephone-img">
-                        <img src="image/telephone.svg" alt="image: telephone">
-                    </div>
-                    <div class="header__telephone-text">
-                        <span>+375 29 292-29-29 (VEL)</span>
-                        <span>+375 33 333-33-33 (МТС)</span>
-                    </div>
-                </div>
-                <div class="header__maps">
-                    <div class="header__maps-img">
-                        <img src="image/maps.svg" alt="image: market-maps">
-                    </div>
-                    <span>ваш город</span>
-                </div>
-                <div class="header__inst">
-                    <div class="header__inst-img">
-                        <img src="image/inst.svg" alt="image: logo-inst">
-                    </div>
-                    <span>посетите нашу страницу</span>
-                </div>
-            </div>
-        </div>
-
-    </header>
-    <main class="main__display">
-        <div class="wrapper">
-            <div class="main__display-wrap">
-                <div class="main__display-top">
-                    <div class="main__display-logo">
-                        <div class="main__display-logo__img">
-                            <img src="image/evarugs-logo.svg" alt="image: evarugs-logo">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Evarugs в твоем городе</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/swiper-bundle.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="wrapper">
+                <div class="header__wrap">
+                    <div class="header__telephone">
+                        <div class="header__telephone-img">
+                            <img
+                                src="image/telephone.svg"
+                                alt="image: telephone"
+                            />
                         </div>
-                        <div class="main__display-title">EVARUGS</div>
+                        <div class="header__telephone-text">
+                            <span>+375 29 292-29-29 (VEL)</span>
+                            <span>+375 33 333-33-33 (МТС)</span>
+                        </div>
                     </div>
-                    <nav class="main__display-nav">
-                        <ul class="main__display-menu">
-                            <li><a href="#">отзывы</a></li>
-                            <li><a href="#about__title">что это?</a></li>
-                            <li><a href="#footer__contacts">контакты</a></li>
+                    <div class="header__maps">
+                        <div class="header__maps-img">
+                            <img
+                                src="image/maps.svg"
+                                alt="image: market-maps"
+                            />
+                        </div>
+                        <span>ваш город</span>
+                    </div>
+                    <div class="header__inst">
+                        <div class="header__inst-img">
+                            <img src="image/inst.svg" alt="image: logo-inst" />
+                        </div>
+                        <span>посетите нашу страницу</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main__display">
+            <div class="wrapper">
+                <div class="main__display-wrap">
+                    <div class="main__display-top">
+                        <div class="main__display-logo">
+                            <div class="main__display-logo__img">
+                                <img
+                                    src="image/evarugs-logo.svg"
+                                    alt="image: evarugs-logo"
+                                />
+                            </div>
+                            <div class="main__display-title">EVARUGS</div>
+                        </div>
+                        <nav class="main__display-nav">
+                            <ul class="main__display-menu">
+                                <li><a href="#">отзывы</a></li>
+                                <li><a href="#about__title">что это?</a></li>
+                                <li>
+                                    <a href="#footer__contacts">контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="main__display-center">
+                        <div class="main__display-left">
+                            <h1 class="main__display-header">
+                                Инновационные коврики для автомобиля
+                            </h1>
+                            <p class="main__display-subheader">
+                                в вашем городе
+                            </p>
+                            <button type="button" class="main__display-btn">
+                                Заказать
+                            </button>
+                        </div>
+                        <div class="main__display-right">
+                            <img src="image/eva.png" alt="image: eva" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section class="about">
+            <div class="wrapper">
+                <div class="about__wrap">
+                    <h2 id="about__title" class="about__title">
+                        Что такое <span>EVA</span> коврики?
+                    </h2>
+                </div>
+                <div class="about__cards">
+                    <div class="about__card">
+                        <div class="about__card-img">
+                            <img src="image/mat01.png" alt="image: mat" />
+                        </div>
+                        <div class="about__card-description">
+                            <h3 class="about__card-title">Материал</h3>
+                            <p class="about__card-text">
+                                Коврики EVA всесезонные и отличаются уникальной
+                                поверхностью материала с ячейками ромбовидной
+                                формы. Из-за чего вода не проливается при
+                                изъятии ковра и не плещется при езде. Коврики
+                                воду не пропускают.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about__card">
+                        <div class="about__card-img">
+                            <img src="image/mat02.png" alt="image: mat" />
+                        </div>
+                        <div class="about__card-description">
+                            <h3 class="about__card-title">Отличия</h3>
+                            <p class="about__card-text">
+                                Резиновые коврики загибаются и лезут на педали.
+                                EVA коврики такого не допустят! Специальные
+                                липучки держат его в одном положении. При
+                                желании, для водителя устанавливается подпятник
+                                из рельефного алюминия.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about__card">
+                        <div class="about__card-img">
+                            <img src="image/mat03.png" alt="image: mat" />
+                        </div>
+                        <div class="about__card-description">
+                            <h3 class="about__card-title">Расцветка</h3>
+                            <p class="about__card-text">
+                                Автомобильные коврики EVA можно заказать и в
+                                индивидуальных размерах и в разных цветах,
+                                которые комбинируется на выбор покупателя с
+                                такими же цветами окантовочной полипропиленовой
+                                ременной ленты.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="review">
+            <div class="review__slider swiper">
+                <div class="swiper-wrapper review__wrapper">
+                    <div class="review__slide swiper-slide">
+                        <div class="review__slide-text">
+                            Покупала у ребят коврики для Хундай солярис в
+                            подарок молодому человеку. Все очень понравилось.
+                            Буду советовать только вас.
+                        </div>
+                        <div class="review__slide-name">Вера К.</div>
+                        <div class="review__slide-img">
+                            <div class="review__slide-photo">
+                                <img src="image/photo-vera.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review__slide swiper-slide">
+                        <div class="review__slide-text">
+                            Спасибо, все приехало, поставил. Результатом
+                            доволен, в машине супер! Заказывал на Ниссан.
+                        </div>
+                        <div class="review__slide-name">Николай П.</div>
+                        <div class="review__slide-img">
+                            <div class="review__slide-photo">
+                                <img src="image/photo-nikolay.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review__slide swiper-slide">
+                        <div class="review__slide-text">
+                            Коврики супер!!! Качество на высшем уровне!!! Удачи
+                            и побольше заказов вам!!! Большое спасибо!
+                        </div>
+                        <div class="review__slide-name">Константин В.</div>
+                        <div class="review__slide-img">
+                            <div class="review__slide-photo">
+                                <img src="image/photo-konstantin.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review__slide swiper-slide">
+                        <div class="review__slide-text">
+                            Покупала у ребят коврики для Хундай солярис в
+                            подарок молодому человеку. Все очень понравилось.
+                            Буду советовать только вас.
+                        </div>
+                        <div class="review__slide-name">Вера К.</div>
+                        <div class="review__slide-img">
+                            <div class="review__slide-photo">
+                                <img src="image/photo-vera.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review__slide swiper-slide">
+                        <div class="review__slide-text">
+                            Спасибо, все приехало, поставил. Результатом
+                            доволен, в машине супер! Заказывал на Ниссан.
+                        </div>
+                        <div class="review__slide-name">Николай П.</div>
+                        <div class="review__slide-img">
+                            <div class="review__slide-photo">
+                                <img src="image/photo-nikolay.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review__slide swiper-slide">
+                        <div class="review__slide-text">
+                            Коврики супер!!! Качество на высшем уровне!!! Удачи
+                            и побольше заказов вам!!! Большое спасибо!
+                        </div>
+                        <div class="review__slide-name">Константин В.</div>
+                        <div class="review__slide-img">
+                            <div class="review__slide-photo">
+                                <img src="image/photo-konstantin.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer__contacts" class="footer">
+            <div class="wrapper">
+                <div class="footer__wrap">
+                    <div class="footer__inst">
+                        <h3 class="footer__title">Мы в социальных сетях</h3>
+                        <div class="footer__inst-img">
+                            <img src="image/inst.png" alt="image: logo-inst" />
+                        </div>
+                    </div>
+                    <div class="footer__telephone">
+                        <h3 class="footer__title">Контактные телефоны</h3>
+                        <ul>
+                            <li>+375 29 292-29-29 (VEL)</li>
+                            <li>+375 33 333-33-33 (МТС)</li>
                         </ul>
-                    </nav>
-                </div>
-                <div class="main__display-center">
-                    <div class="main__display-left">
-                        <h1 class="main__display-header">Инновационные коврики для автомобиля</h1>
-                        <p class="main__display-subheader">в вашем городе</p>
-                        <button type="button" class="main__display-btn">Заказать</button>
                     </div>
-                    <div class="main__display-right">
-                        <img src="image/eva.png" alt="image: eva">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <section class="about">
-        <div class="wrapper">
-            <div class="about__wrap">
-                <h2 id="about__title" class="about__title">Что такое <span>EVA</span> коврики?</h2>
-            </div>
-            <div class="about__cards">
-                <div class="about__card">
-                    <div class="about__card-img">
-                        <img src="image/mat01.png" alt="image: mat">
-                    </div>
-                    <div class="about__card-description">
-                        <h3 class="about__card-title">Материал</h3>
-                        <p class="about__card-text">Коврики EVA всесезонные и отличаются уникальной поверхностью материала с ячейками ромбовидной формы. Из-за чего вода не проливается при изъятии ковра и не плещется при езде. Коврики воду не пропускают.</p>
+                    <div class="footer__adress">
+                        <h3 class="footer__title">О нас</h3>
+                        <ul>
+                            <li>
+                                Индивидуальное изготовление EVA ковриков для
+                                вашего автомобиля
+                            </li>
+                            <li>ваш город</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="about__card">
-                    <div class="about__card-img">
-                        <img src="image/mat02.png" alt="image: mat">
-                    </div>
-                    <div class="about__card-description">
-                        <h3 class="about__card-title">Отличия</h3>
-                        <p class="about__card-text">Резиновые коврики загибаются и лезут на педали. EVA коврики такого не допустят! Специальные липучки держат его в одном положении. При желании, для водителя устанавливается подпятник из рельефного алюминия.</p>
-                    </div>
+                <div class="footer__decor-1">
+                    <img src="image/Vector-small.svg" alt="image: star-small" />
                 </div>
-                <div class="about__card">
-                    <div class="about__card-img">
-                        <img src="image/mat03.png" alt="image: mat">
-                    </div>
-                    <div class="about__card-description">
-                        <h3 class="about__card-title">Расцветка</h3>
-                        <p class="about__card-text">Автомобильные коврики EVA можно заказать и в индивидуальных размерах и в разных цветах, которые комбинируется на выбор покупателя с такими же цветами окантовочной полипропиленовой ременной ленты.</p>
-                    </div>
+                <div class="footer__decor-2">
+                    <img src="image/Vector-big.svg" alt="image: star-big" />
                 </div>
             </div>
-        </div>
-    </section>
-    <footer id="footer__contacts" class="footer">
-        <div class="wrapper">
-            <div class="footer__wrap">
-                <div class="footer__inst">
-                    <h3 class="footer__title">Мы в социальных сетях</h3>
-                    <div class="footer__inst-img">
-                        <img src="image/inst.png" alt="image: logo-inst">
-                    </div>
-                </div>
-                <div class="footer__telephone">
-                    <h3 class="footer__title">Контактные телефоны</h3>
-                    <ul>
-                        <li>+375 29 292-29-29 (VEL)</li>
-                        <li>+375 33 333-33-33 (МТС)</li>
-                    </ul>
-                </div>
-                <div class="footer__adress">
-                    <h3 class="footer__title">О нас</h3>
-                    <ul>
-                        <li>Индивидуальное изготовление EVA ковриков для вашего автомобиля</li>
-                        <li>ваш город</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer__decor-1">
-                <img src="image/Vector-small.svg" alt="image: star-small">
-            </div>
-            <div class="footer__decor-2">
-                <img src="image/Vector-big.svg" alt="image: star-big">
-            </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+        <script src="js/swiper-bundle.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>
