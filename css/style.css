@@ -304,7 +304,7 @@ h6 {
     position: absolute;
     top: 67%;
     left: 50%;
-    transform: translate(-50% -50%);
+    transform: translate(-50%, -50%);
     background: linear-gradient(
         90deg,
         rgba(185, 1, 96, 1) 0%,
@@ -400,4 +400,123 @@ h6 {
     font-size: 1.4rem;
     line-height: 114%;
     color: #000000;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-y: auto;
+    overflow-x: hidden;
+    backdrop-filter: blur(40px);
+    z-index: 100;
+    padding: 3rem 0;
+    display: none;
+}
+
+.modal__inner-header {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 117%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.modal__inner {
+    position: relative;
+    z-index: 150;
+    background: #ffffff url("../img/fon-modal-2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0rem 0rem 3.5rem rgba(212, 20, 90, 0.25);
+    border-radius: 1.5rem;
+    padding: 7rem 21rem 5rem 21rem;
+    margin: auto auto;
+}
+
+.modal__inner-elements {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal__item {
+    width: 75rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__item:first-child {
+    margin-bottom: 1.7rem;
+}
+
+.modal__input input {
+    width: 36rem;
+    min-height: 5rem;
+    background: #ffffff;
+    border: 0.1rem solid #a2a2a2;
+    box-sizing: border-box;
+    border-radius: 0.9rem;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 114%;
+    color: #989898;
+    padding-left: 2.1rem;
+    padding-right: 2.1rem;
+}
+
+.modal__item textarea {
+    background: #ffffff;
+    border: 0.1rem solid #a2a2a2;
+    box-sizing: border-box;
+    border-radius: 0.9rem;
+    width: 100%;
+    min-height: 9rem;
+    font-size: 1.4rem;
+    line-height: 114%;
+    color: #989898;
+    padding: 2.1rem;
+    resize: none;
+    outline: none;
+    margin-bottom: 5rem;
+    font-weight: 300;
+}
+
+.modal__buttom {
+    width: 17rem;
+    font-size: 1.6rem;
+    padding: 1.5rem 3rem;
+    line-height: 115%;
+    font-weight: normal;
+}
+
+.modal__policy {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    display: flex;
+    width: 100%;
+    margin-left: 1rem;
+}
+
+.modal__policy input {
+    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.modal__policy a {
+    text-decoration: none;
+}
+
+.active {
+    display: flex;
+}
+
+body.lock {
+    overflow: hidden;
 }
